@@ -4,39 +4,53 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<title>Total Cloud Intern Assesment</title>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<title>Total Cloud Intern Assesment</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <style>
+.wrap {
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 37%, rgba(5,88,255,1) 38%, rgba(7,60,184,1) 38%, rgba(6,75,222,1) 71%, rgba(5,88,255,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(37%, rgba(255,255,255,1)), color-stop(38%, rgba(5,88,255,1)), color-stop(38%, rgba(7,60,184,1)), color-stop(71%, rgba(6,75,222,1)), color-stop(100%, rgba(5,88,255,1)));
+    background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 37%, rgba(5,88,255,1) 38%, rgba(7,60,184,1) 38%, rgba(6,75,222,1) 71%, rgba(5,88,255,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 37%, rgba(5,88,255,1) 38%, rgba(7,60,184,1) 38%, rgba(6,75,222,1) 71%, rgba(5,88,255,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 37%, rgba(5,88,255,1) 38%, rgba(7,60,184,1) 38%, rgba(6,75,222,1) 71%, rgba(5,88,255,1) 100%);
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 37%, rgba(5,88,255,1) 38%, rgba(7,60,184,1) 38%, rgba(6,75,222,1) 71%, rgba(5,88,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0558ff', GradientType=1 );
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
+}
 img {
     width: 100%;
 }
-.form-check-input {
-    position: absolute;
-    top: 1px;
-    right: 3px;
-    height: 22px;
-    width: 22px;
+.img-wdth {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 7px 0 #c7c7c7;
 }
-.form-check {
-    padding-left: 0;
+.cnt-wdth {
+    margin-top: 10px;
+    margin-left: 16px;
+}
+.cnt-wdth p {
+    color: #272727;
 }
 .remove-padding {
     padding: 5px;
 }
 .multi-cnt {
-    background: #006cb9;
-    padding: 5px 20px;
-    overflow: scroll;
+    background: #ffffff;
+    padding: 20px 20px;
+    overflow-y: scroll;
     height: 375px;
+    box-shadow: 0 0 5px 0 #a9a9a9;
 }
-.multi-under-cnt img {
-    cursor: pointer;
-}
-.multi-under-cnt img:hover {
-    background: red;
-}
+
+
 		  /* width */
 .multi-cnt::-webkit-scrollbar {
  width: 5px;
@@ -44,17 +58,17 @@ img {
 
 /* Track */
 .multi-cnt::-webkit-scrollbar-track {
- background: #f1f1f1;
+ background: #ddd;
 }
  
 /* Handle */
 .multi-cnt::-webkit-scrollbar-thumb {
- background: #888;
+ background: #3E4CEF;
 }
 
 /* Handle on hover */
 .multi-cnt::-webkit-scrollbar-thumb:hover {
- background: #555;
+ background: #3E4CEF;
 }
 .assign-btn {
     margin: 0;
@@ -76,7 +90,7 @@ img {
     padding: 10px;
 }
 header {
-    background: #064571;
+    /*    background: #064571;*/
     width: 100%;
     padding: 10px;
 }
@@ -85,9 +99,42 @@ div#t-open-tag, span.closebtn {
 }
 div#myNav {
     width: 100%;
+    z-index: 9;
+}
+.multi-select {
+    background: #fff;
+    padding: 38px;
+    box-shadow: 0 0 5px 0 #c1c1c1;
+    position: relative;
+    z-index: 9;
+}
+.circle-bbox {
+    width: 280px;
+    height: 280px;
+    background: #0743c9;
+    position: absolute;
+    right: -45px;
+    top: -115px;
+}
+.squre-bbox {
+    width: 711px;
+    height: 280px;
+    background: #ffffff;
+    position: absolute;
+    right: -78px;
+    bottom: -115px;
+    transform: rotate(-17deg);
+}
+.circle-over, .squre-over {
+    width: 100%;
+    position: relative;
 }
 
 @media (max-width:767px) {
+.heading-h {
+    z-index: 99;
+    position: relative;
+}
 div#t-open-tag, span.closebtn {
     display: block;
 }
@@ -129,9 +176,11 @@ div#t-open-tag, span.closebtn {
 }
 .logo-sct {
     width: 70% !important;
+    position: relative;
 }
 div#t-open-tag {
     float: right;
+    position: relative;
 }
 .nav-bar-sct {
     width: 100% !important;
@@ -143,220 +192,205 @@ div#t-open-tag {
     margin-top: 0px;
     text-align: center;
 }
+.t-open-tag a {
+    color: #fff;
+}
 div#myNav {
     width: 0;
+}
+div#myNav {
+    z-index: 999;
+}
+.multi-cnt-mb {
+    height: 170px !important;
 }
 }
 </style>
 </head>
 <body>
-<header>
-  <div class="container">
-    <div class="t-open-tag" id="t-open-tag"> <a href="javascript:void(0)"  onclick="openNav()">&#9776; open</a> </div>
-    <div class="d-flex">
-      <div class="logo-sct w-25"> <img src="lorem-lorem.svg" alt="logo"> </div>
-      <div class="overlay" id="myNav"> <span style="font-size:30px;cursor:pointer" class="closebtn" onclick="closeNav()">&times;</span>
-        <div class="nav-bar-sct w-100 text-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
+<div class="wrap">
+  <div class="circle-over">
+    <div class="circle-bbox rounded-pill"></div>
+  </div>
+  <header>
+    <div class="container">
+      <div class="t-open-tag" id="t-open-tag"> <a href="javascript:void(0)"  onclick="openNav()">&#9776;</a> </div>
+      <div class="d-flex">
+        <div class="logo-sct w-25"> <img src="lorem-lorem.svg" alt="logo"> </div>
+        <div class="overlay" id="myNav"> <span style="font-size:30px;cursor:pointer" class="closebtn" onclick="closeNav()">&times;</span>
+          <div class="nav-bar-sct w-100 text-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container mt-5 mb-5">
+    <h3 class="text-center text-white mb-4 mt-4 heading-h" style="text-transform: capitalize;">The Best app to increase your productivity</h3>
+    <div class="multi-select">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-12 remove-padding">
+          <div class="multi-cnt">
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-12 remove-padding">
+          <div class="multi-cnt multi-cnt-mb">
+            <div class="assign-btn"> <a href="javascript:;" class="btn btn-primary btn-small d-block">Assign &nbsp;<i class="far fa-arrow-alt-circle-right"></i></a> <a href="javascript:;" class="btn btn-primary btn-small d-block mt-4"><i class="far fa-arrow-alt-circle-left"></i> &nbsp;Revoke</a> </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-12 remove-padding">
+          <div class="multi-cnt">
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+            <hr/>
+            <div class="d-flex">
+              <div class="img-wdth"> <img src="https://loremflickr.com/200/200/paris,girl/all" alt="image"> </div>
+              <div class="cnt-wdth">
+                <p class="mb-0">Saurabh Madhukar</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</header>
-<div class="container mt-5">
-  <div class="multi-select">
-    <div class="row">
-      <div class="col-lg-5 col-md-5 col-12 remove-padding">
-        <div class="multi-cnt">
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi1">
-                  <label class="form-check-label" for="multi1"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi2">
-                  <label class="form-check-label" for="multi2"> <img src="https://loremflickr.com/g/320/240/paris" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi3">
-                  <label class="form-check-label" for="multi3"> <img src="https://loremflickr.com/g/320/240/paris,girl" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi4">
-                  <label class="form-check-label" for="multi4"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi5">
-                  <label class="form-check-label" for="multi5"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi6">
-                  <label class="form-check-label" for="multi6"> <img src="https://loremflickr.com/g/320/240/paris" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi7">
-                  <label class="form-check-label" for="multi7"> <img src="https://loremflickr.com/g/320/240/paris,girl" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi8">
-                  <label class="form-check-label" for="multi8"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi9">
-                  <label class="form-check-label" for="multi9"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi10">
-                  <label class="form-check-label" for="multi10"> <img src="https://loremflickr.com/g/320/240/paris" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi11">
-                  <label class="form-check-label" for="multi11"> <img src="https://loremflickr.com/g/320/240/paris,girl" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi12">
-                  <label class="form-check-label" for="multi12"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi13">
-                  <label class="form-check-label" for="multi13"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi14">
-                  <label class="form-check-label" for="multi14"> <img src="https://loremflickr.com/g/320/240/paris" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi15">
-                  <label class="form-check-label" for="multi15"> <img src="https://loremflickr.com/g/320/240/paris,girl" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi16">
-                  <label class="form-check-label" for="multi16"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-2 col-12 remove-padding">
-        <div class="multi-cnt">
-          <div class="assign-btn"> <a href="javascript:;" class="btn btn-primary btn-small d-block">Assign</a> <a href="javascript:;" class="btn btn-primary btn-small d-block mt-4">Revoke</a> </div>
-        </div>
-      </div>
-      <div class="col-lg-5 col-md-5 col-12 remove-padding">
-        <div class="multi-cnt">
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi17">
-                  <label class="form-check-label" for="multi17"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi18">
-                  <label class="form-check-label" for="multi18"> <img src="https://loremflickr.com/g/320/240/paris" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi19">
-                  <label class="form-check-label" for="multi19"> <img src="https://loremflickr.com/g/320/240/paris,girl" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 remove-padding">
-              <div class="multi-under-cnt">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="multi20">
-                  <label class="form-check-label" for="multi20"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="squre-over">
+    <div class="squre-bbox"></div>
   </div>
 </div>
-
 <!-- Optional JavaScript --> 
 <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> 
