@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+	  <head>
+	  <!-- Required meta tags -->
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	  <!-- Bootstrap CSS -->
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	  <title>Hello, world!</title>
+	  <style>
+img {
+    width: 100%;
+}
+.form-check-input {
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    height: 22px;
+    width: 22px;
+}
+.form-check {
+    padding-left: 0;
+}
+.remove-padding {
+    padding: 5px;
+}
+.multi-cnt {
+    background: #006cb9;
+    padding: 5px 20px;
+	overflow: scroll;
+	height: 375px;
+}
+.multi-under-cnt img {
+    cursor: pointer;
+}
+.multi-under-cnt img:hover {
+    background: red;
+}
+		  /* width */
+.multi-cnt::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.multi-cnt::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.multi-cnt::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.multi-cnt::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+		  .assign-btn{
+			  margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+		  }
+		  .nav-bar-sct li a{
+			  color: #fff;
+		  }
+		   .nav-bar-sct li a:hover{
+			  color: #A2A2A2;
+		  }
+		  .nav-bar-sct li{
+			  display: inline-block;
+			  list-style: none;
+			  padding: 10px;
+		  }
+		  header{
+			  background: #064571;
+			  width: 100%;
+			  padding: 10px;
+		  }
+		  div#t-open-tag, span.closebtn{
+    display:none;
+}
+		  div#myNav {
+    width: 100%;
+}
+		  @media (max-width:767px){
+			  
+  div#t-open-tag, span.closebtn{
+    display:block;
+}  
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  color:#fff;
+}
+			  .logo-sct{
+				  width:70% !important;
+			  }
+			  div#t-open-tag {
+    float: right;
+}
+			  .nav-bar-sct {
+    width: 100% !important;
+				  margin-top: 75px;
+}
+			  .nav-bar-sct li {
+    display: block;
+   
+    padding: 0px;
+    margin-top: 0px;
+ 
+    text-align: center;
+}
+			  div#myNav {
+    width: 0;
+}
+		  }
+		 
+</style>
+	  </head>
+	  <body>
+		  <header>
+		  	<div class="container">
+				    <div class="t-open-tag" id="t-open-tag">
+                     <a href="javascript:void(0)"  onclick="openNav()">&#9776; open</a>
+                </div>
+				 
+			<div class="d-flex">
+				  <div class="logo-sct w-25">
+				<img src="lorem-lorem.svg" alt="logo">
+				</div>
+				
+				<div class="overlay" id="myNav">
+				<span style="font-size:30px;cursor:pointer" class="closebtn" onclick="closeNav()">&times;</span>
+				<div class="nav-bar-sct w-100 text-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Pricing</a></li>
+					<li><a href="#">Contact</a></li>
+				</div>
+				</div>
+				</div>
+			  </div>
+		  </header>
+<div class="container mt-5">
+        <div class="multi-select">
+    <div class="row">
+            <div class="col-lg-5 col-md-5 col-12 remove-padding">
+        <div class="multi-cnt">
+                <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi1">
+                        <label class="form-check-label" for="multi1"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi2">
+                        <label class="form-check-label" for="multi2"> <img src="https://loremflickr.com/g/320/240/paris" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi3">
+                        <label class="form-check-label" for="multi3"> <img src="https://loremflickr.com/g/320/240/paris,girl" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi4">
+                        <label class="form-check-label" for="multi4"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+          </div>
+                <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi5">
+                        <label class="form-check-label" for="multi5"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi6">
+                        <label class="form-check-label" for="multi6"> <img src="https://loremflickr.com/g/320/240/paris" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi7">
+                        <label class="form-check-label" for="multi7"> <img src="https://loremflickr.com/g/320/240/paris,girl" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi8">
+                        <label class="form-check-label" for="multi8"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+          </div>
+                <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi9">
+                        <label class="form-check-label" for="multi9"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi10">
+                        <label class="form-check-label" for="multi10"> <img src="https://loremflickr.com/g/320/240/paris" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi11">
+                        <label class="form-check-label" for="multi11"> <img src="https://loremflickr.com/g/320/240/paris,girl" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi12">
+                        <label class="form-check-label" for="multi12"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+          </div>
+                <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi13">
+                        <label class="form-check-label" for="multi13"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi14">
+                        <label class="form-check-label" for="multi14"> <img src="https://loremflickr.com/g/320/240/paris" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi15">
+                        <label class="form-check-label" for="multi15"> <img src="https://loremflickr.com/g/320/240/paris,girl" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi16">
+                        <label class="form-check-label" for="multi16"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+          </div>
+              </div>
+      </div>
+            <div class="col-lg-2 col-md-2 col-12 remove-padding">
+        <div class="multi-cnt"> 
+			<div class="assign-btn">
+			<a href="javascript:;" class="btn btn-primary btn-small d-block">Assign</a> 
+			<a href="javascript:;" class="btn btn-primary btn-small d-block mt-4">Revoke</a>
+			</div>
+		</div>
+      </div>
+            <div class="col-lg-5 col-md-5 col-12 remove-padding">
+        <div class="multi-cnt">
+                <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi17">
+                        <label class="form-check-label" for="multi17"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi18">
+                        <label class="form-check-label" for="multi18"> <img src="https://loremflickr.com/g/320/240/paris" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi19">
+                        <label class="form-check-label" for="multi19"> <img src="https://loremflickr.com/g/320/240/paris,girl" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+            <div class="col-lg-3 col-md-3 col-6 remove-padding">
+                    <div class="multi-under-cnt">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="multi20">
+                        <label class="form-check-label" for="multi20"> <img src="https://loremflickr.com/g/320/240/paris,girl/all" alt="image"> </label>
+                      </div>
+              </div>
+                  </div>
+          </div>
+              </div>
+      </div>
+          </div>
+  </div>
+      </div>
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		  <script>
+		    function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("t-open-tag").style.display = "none";
+}
+    function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+  document.getElementById("t-open-tag").style.display = "block";
+}
+
+		  </script>
+</body>
+</html>
